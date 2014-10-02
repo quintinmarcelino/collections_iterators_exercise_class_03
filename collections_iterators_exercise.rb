@@ -56,12 +56,11 @@ puts "User_#{user_id} is at index #{user_index}"
 =end
 
 #OK. Onto Problem 5. DEEP BREATH Searching for Stuff
-#I can't quite get this to work. Looking at other people's code, it looks like I'm on the
-#right track.
+#Woo! Solved with Evan's help. Thanks Evan!
 puts "SEARCH RESULTS\nusername               age\n========               ==="
-data[:user][:age].each do |age_under|
-	if data[:age] < 25
-			puts "#{age_under[:user][:username]}               #{age_under[:user][:age]}"               
+data.each do |age_select|
+	if age_select[:user][:age] < 25
+			puts "#{age_select[:user][:username]}                 #{age_select[:user][:age]}"               
 	end
 end
 
